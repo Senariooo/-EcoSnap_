@@ -30,23 +30,13 @@ const Index = () => {
       setActiveTab("home");
 
       try {
-        const response = await fetch(
-          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/analyze-waste`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
-            },
-            body: JSON.stringify({ image: base64 }),
-          }
-        );
+        const { data, error } = await supabase.functions.invoke("analyze-waste", {
+          body: { image: base64 },
+        });
 
-        if (!response.ok) {
-          throw new Error("Analiz başarısız oldu");
+        if (error) {
+          throw new Error(error.message || "Analiz başarısız oldu");
         }
-
-        const data = await response.json();
         setAnalysisResult(data);
       } catch (error) {
         console.error("Analiz hatası:", error);
