@@ -1,5 +1,5 @@
 Canlı Uygulama Linki: https://ecosnap-antalya.netlify.app
-​Demo Video Linki: 
+​Demo Video Linki: https://youtu.be/NB5pRvpijV4?si=fCnLaWdVXYRb0TpA
 
 
 EcoSnap_ 🌍 EcoSnap: Akıllı Atık Geri Dönüşüm Rehberi
