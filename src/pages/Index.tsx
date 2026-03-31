@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import { motion } from "framer-motion";
 import { Camera, Leaf, MapPin, Recycle, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
