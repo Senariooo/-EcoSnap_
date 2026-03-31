@@ -5,7 +5,7 @@ EcoSnap, evdeki atıkların (özellikle elektronik, tekstil ve karmaşık plasti
 
 ## 🛠️ Teknik Gereksinimler
 - **Frontend:** React + Tailwind CSS.
-- **AI Model:** Groq Cloud Llama 3.2 Vision (Görüntü işleme ve materyal analizi).
+- AI Model: Google Gemini 3 Flash (Görüntü işleme ve materyal analizi).
 - **Deployment:** Netlify.
 
 ## ✨ Temel Özellikler
